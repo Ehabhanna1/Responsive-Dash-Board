@@ -19,7 +19,7 @@ class DashBoardDestopLayout extends StatelessWidget {
             child: Column(
             children: [
               AllExpensess(),
-              SizedBox(height: 15),
+              SizedBox(height: 10),
               QuickInvoice(),
             ],
           ),),
