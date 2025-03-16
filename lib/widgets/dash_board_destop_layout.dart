@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/all_expensess_and_quick_invoice_section.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/my_card.dart';
+import 'package:responsive_dash_board/widgets/my_card_page_view.dart';
 
 class DashBoardDestopLayout extends StatelessWidget {
   const DashBoardDestopLayout({super.key});
@@ -21,7 +22,7 @@ class DashBoardDestopLayout extends StatelessWidget {
             const SizedBox(width: 24,),
             Expanded(
               flex: 1,
-              child: MyCard()),
+              child: MyCardPageView()),
 
 
 
