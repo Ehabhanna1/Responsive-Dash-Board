@@ -14,7 +14,7 @@ class InActiveAllExpensessItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape:RoundedRectangleBorder(
@@ -27,11 +27,11 @@ class InActiveAllExpensessItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
            AllExpenssesItemHeader(image: itemModel.image,),
-           SizedBox(height: 34,),
+           SizedBox(height: 28,),
            Text(itemModel.title, style: AppStyles.styleMedium16,),
            SizedBox(height: 8,),
            Text(itemModel.date, style: AppStyles.styleRegular13,),
-           SizedBox(height: 16,),
+           SizedBox(height: 12,),
            Text(itemModel.price, style: AppStyles.styleSemiBold24,),
     
           ],
@@ -54,7 +54,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: ShapeDecoration(
         color: Color(0xFF4DB7F2),
         shape:RoundedRectangleBorder(
@@ -71,11 +71,11 @@ class ActiveAllExpensessItem extends StatelessWidget {
             imageBackground:  Colors.white.withOpacity(0.10000000149011612),
             
             image: itemModel.image,),
-           SizedBox(height: 34,),
+           SizedBox(height: 28,),
            Text(itemModel.title, style: AppStyles.styleMedium16.copyWith(color: Colors.white),),
            SizedBox(height: 8,),
            Text(itemModel.date, style: AppStyles.styleRegular13.copyWith(color: Color(0xFFFAFAFA)),),
-           SizedBox(height: 16,),
+           SizedBox(height: 12,),
            Text(itemModel.price, style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),),
     
           ],
