@@ -18,7 +18,7 @@ class DashBoardDestopLayout extends StatelessWidget {
             flex: 2,
             child: AllExpensessAndQuickInvoiceSection(),),
 
-            const SizedBox(width: 30,),
+            const SizedBox(width: 24,),
             Expanded(
               flex: 1,
               child: MyCard()),
