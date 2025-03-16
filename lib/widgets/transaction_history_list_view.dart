@@ -7,8 +7,8 @@ class TransactionHistoryListView extends StatelessWidget {
 
   static const items = [
    TransactionModel(title: "Cash Withdrawal", date: "17 March 2025", amount: "-\$1,000", isWithdrawal: true, ),
-   TransactionModel(title: "Landing Page Project", date: "17 March 2025", amount: "-\$2,000", isWithdrawal: false, ),
-   TransactionModel(title: "junior Flutter Developer", date: "17 March 2025", amount: "-\$1,000", isWithdrawal: false, ),
+   TransactionModel(title: "Landing Project", date: "17 March 2025", amount: "\$2,000", isWithdrawal: false, ),
+   TransactionModel(title: "junior Flutter Dev", date: "17 March 2025", amount: "\$1,000", isWithdrawal: false, ),
   ];
 
   @override
