@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/all_expensess_and_quick_invoice_section.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/income_section.dart';
-import 'package:responsive_dash_board/widgets/my_card.dart';
-import 'package:responsive_dash_board/widgets/my_card_and_transaction_history_sections.dart';
-import 'package:responsive_dash_board/widgets/transaction_history.dart';
 
 class DashBoardDestopLayout extends StatelessWidget {
   const DashBoardDestopLayout({super.key});
