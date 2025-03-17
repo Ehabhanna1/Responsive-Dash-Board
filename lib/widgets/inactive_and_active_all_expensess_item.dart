@@ -72,7 +72,9 @@ class ActiveAllExpensessItem extends StatelessWidget {
             
             image: itemModel.image,),
            SizedBox(height: 28,),
-           Text(itemModel.title, style: AppStyles.styleMedium16.copyWith(color: Colors.white),),
+           Text(itemModel.title, style: AppStyles.styleMedium16.copyWith(
+            
+            color: Colors.white),),
            SizedBox(height: 8,),
            Text(itemModel.date, style: AppStyles.styleRegular13.copyWith(color: Color(0xFFFAFAFA)),),
            SizedBox(height: 12,),

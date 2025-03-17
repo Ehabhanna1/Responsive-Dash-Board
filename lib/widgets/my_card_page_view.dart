@@ -10,6 +10,7 @@ class MyCardPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExpandablePageView(
+      
       controller: pageController,
      
       scrollDirection: Axis.horizontal,

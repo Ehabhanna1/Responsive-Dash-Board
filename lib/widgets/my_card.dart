@@ -11,7 +11,7 @@ class MyCard extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 420/215,
       child: Container(
-        
+       
         decoration: ShapeDecoration(
           image: DecorationImage(image: AssetImage(Assets.imagesCardBackground,), fit: BoxFit.fill),
           color: Color(0xFF4DB7F2),
@@ -22,8 +22,10 @@ class MyCard extends StatelessWidget {
            children: [
             ListTile(
               contentPadding: EdgeInsets.only(left: 25, right: 33, top: 8,),
-              title: Text("Name Card", style: AppStyles.styleRegular16.copyWith(color: Colors.white),),
-              subtitle: Text("Ehab Hanna", style: AppStyles.styleMedium20),
+              title: Text("Name Card", style: AppStyles.styleRegular16.copyWith(
+                fontSize: 13,
+                color: Colors.white),),
+              subtitle: Text("Ehab Hanna", style: AppStyles.styleMedium20.copyWith(fontSize: 15)),
               trailing: SvgPicture.asset(Assets.imagesGallery),
 
             ),
@@ -33,7 +35,9 @@ class MyCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text("0918 1234 5678 1234", style: AppStyles.styleSemiBold20.copyWith(color: Colors.white),),
+                  Text("0918 1234 5678 1234", style: AppStyles.styleSemiBold20.copyWith(
+                    fontSize: 15,
+                    color: Colors.white),),
               
                          Text("Expiry Date 12/27", style: AppStyles.styleRegular13.copyWith(color: Colors.white),),
                 ],

@@ -11,7 +11,7 @@ final String hint;
       
       
       decoration: InputDecoration(
-        helperStyle: AppStyles.styleRegular16,
+        hintStyle: AppStyles.styleRegular13,
         hintText:hint ,
         fillColor: Color(0xffFAFAFA),
         filled: true,
