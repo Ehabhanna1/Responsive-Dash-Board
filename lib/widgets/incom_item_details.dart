@@ -11,16 +11,16 @@ class ItemDetails extends StatelessWidget {
     return ListTile(
      
       leading: Container(
-        width: 10,
-        height: 10,
+        width: 12,
+        height: 12,
         decoration: ShapeDecoration(
           color: itemDetailsModel.color,
           shape: OvalBorder(),
         ),
         
       ),
-      title: Text(itemDetailsModel.title, style: AppStyles.styleRegular16.copyWith(fontSize: 12)),
-      trailing: Text(itemDetailsModel.value, style: AppStyles.styleMedium16.copyWith(fontSize: 14))
+      title: Text(itemDetailsModel.title, style: AppStyles.styleRegular16),
+      trailing: Text(itemDetailsModel.value, style: AppStyles.styleMedium16)
     );
   }
 }
