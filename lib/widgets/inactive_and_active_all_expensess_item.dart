@@ -27,12 +27,12 @@ class InActiveAllExpensessItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
            AllExpenssesItemHeader(image: itemModel.image,),
-           SizedBox(height: 28,),
+           SizedBox(height: 24,),
            Text(itemModel.title, style: AppStyles.styleMedium16,),
            SizedBox(height: 8,),
            Text(itemModel.date, style: AppStyles.styleRegular13,),
            SizedBox(height: 12,),
-           Text(itemModel.price, style: AppStyles.styleSemiBold24,),
+           Text(itemModel.price, style: AppStyles.styleSemiBold24.copyWith(fontSize: 20),),
     
           ],
         ),
@@ -71,14 +71,16 @@ class ActiveAllExpensessItem extends StatelessWidget {
             imageBackground:  Colors.white.withOpacity(0.10000000149011612),
             
             image: itemModel.image,),
-           SizedBox(height: 28,),
+           SizedBox(height: 24,),
            Text(itemModel.title, style: AppStyles.styleMedium16.copyWith(
             
             color: Colors.white),),
            SizedBox(height: 8,),
            Text(itemModel.date, style: AppStyles.styleRegular13.copyWith(color: Color(0xFFFAFAFA)),),
            SizedBox(height: 12,),
-           Text(itemModel.price, style: AppStyles.styleSemiBold24.copyWith(color: Colors.white),),
+           Text(itemModel.price, style: AppStyles.styleSemiBold24.copyWith(
+            fontSize: 21,
+            color: Colors.white),),
     
           ],
         ),

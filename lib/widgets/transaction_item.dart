@@ -15,10 +15,10 @@ class TransactionItem extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12)),
         child: ListTile(
-          title: Text(transactionModel.title,style: AppStyles.styleSemiBold16.copyWith(fontSize: 13),),
+          title: Text(transactionModel.title,style: AppStyles.styleSemiBold16.copyWith(fontSize: 14),),
           subtitle: Text(transactionModel.date,style: AppStyles.styleRegular16.copyWith(fontSize: 11),),
           trailing: Text(transactionModel.amount,style: AppStyles.styleSemiBold20.copyWith(
-            fontSize: 15,
+            fontSize: 16,
 
             color: transactionModel.isWithdrawal ? Color(0xffF3735E) : Color(0xff7CD87A)
           ),),
