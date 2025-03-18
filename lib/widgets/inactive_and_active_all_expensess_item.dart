@@ -28,11 +28,11 @@ class InActiveAllExpensessItem extends StatelessWidget {
           children: [
            AllExpenssesItemHeader(image: itemModel.image,),
            SizedBox(height: 24,),
-           Text(itemModel.title, style: AppStyles.styleMedium16,),
+           Text(itemModel.title, style: AppStyles.styleMedium16(context),),
            SizedBox(height: 8,),
-           Text(itemModel.date, style: AppStyles.styleRegular13,),
+           Text(itemModel.date, style: AppStyles.styleRegular12(context),),
            SizedBox(height: 12,),
-           Text(itemModel.price, style: AppStyles.styleSemiBold24.copyWith(fontSize: 20),),
+           Text(itemModel.price, style: AppStyles.styleSemiBold24(context).copyWith(fontSize: 20),),
     
           ],
         ),
@@ -72,13 +72,13 @@ class ActiveAllExpensessItem extends StatelessWidget {
             
             image: itemModel.image,),
            SizedBox(height: 24,),
-           Text(itemModel.title, style: AppStyles.styleMedium16.copyWith(
+           Text(itemModel.title, style: AppStyles.styleMedium16(context).copyWith(
             
             color: Colors.white),),
            SizedBox(height: 8,),
-           Text(itemModel.date, style: AppStyles.styleRegular13.copyWith(color: Color(0xFFFAFAFA)),),
+           Text(itemModel.date, style: AppStyles.styleRegular12(context).copyWith(color: Color(0xFFFAFAFA)),),
            SizedBox(height: 12,),
-           Text(itemModel.price, style: AppStyles.styleSemiBold24.copyWith(
+           Text(itemModel.price, style: AppStyles.styleSemiBold24(context).copyWith(
             fontSize: 21,
             color: Colors.white),),
     

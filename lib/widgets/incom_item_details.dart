@@ -19,8 +19,8 @@ class ItemDetails extends StatelessWidget {
         ),
         
       ),
-      title: Text(itemDetailsModel.title, style: AppStyles.styleRegular16),
-      trailing: Text(itemDetailsModel.value, style: AppStyles.styleMedium16)
+      title: Text(itemDetailsModel.title, style: AppStyles.styleRegular16(context)),
+      trailing: Text(itemDetailsModel.value, style: AppStyles.styleMedium16(context)),
     );
   }
 }

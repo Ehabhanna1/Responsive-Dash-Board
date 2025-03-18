@@ -22,10 +22,10 @@ class MyCard extends StatelessWidget {
            children: [
             ListTile(
               contentPadding: EdgeInsets.only(left: 25, right: 33, top: 8,),
-              title: Text("Name Card", style: AppStyles.styleRegular16.copyWith(
+              title: Text("Name Card", style: AppStyles.styleRegular16(context).copyWith(
                 fontSize: 13,
                 color: Colors.white),),
-              subtitle: Text("Ehab Hanna", style: AppStyles.styleMedium20),
+              subtitle: Text("Ehab Hanna", style: AppStyles.styleMedium20(context)),
               trailing: SvgPicture.asset(Assets.imagesGallery),
 
             ),
@@ -35,11 +35,11 @@ class MyCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text("0918 1234 5678 1234", style: AppStyles.styleSemiBold20.copyWith(
+                  Text("0918 1234 5678 1234", style: AppStyles.styleSemiBold20(context).copyWith(
                     fontSize: 18,
                     color: Colors.white),),
               
-                         Text("Expiry Date 12/27", style: AppStyles.styleRegular13.copyWith(color: Colors.white),),
+                         Text("Expiry Date 12/27", style: AppStyles.styleRegular12(context).copyWith(color: Colors.white),),
                 ],
               ),
             ),

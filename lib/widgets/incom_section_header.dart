@@ -11,7 +11,7 @@ class IncomeSectionHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text("Income", style: AppStyles.styleSemiBold20.copyWith(fontSize: 17)),
+        Text("Income", style: AppStyles.styleSemiBold20(context).copyWith(fontSize: 17)),
     
         Container(
           padding: EdgeInsets.symmetric(horizontal: 15, vertical: 6),
@@ -26,7 +26,7 @@ class IncomeSectionHeader extends StatelessWidget {
             child: Row(
              
               children: [
-                Text("Monthly", style: AppStyles.styleMedium16.copyWith(fontSize: 13),),
+                Text("Monthly", style: AppStyles.styleMedium16(context).copyWith(fontSize: 13),),
                 SizedBox(width: 8,),
                 Transform.rotate(angle: -3.14 / 2, child: Icon(Icons.arrow_back_ios_new,
                  color: Color(0xff064061,),size: 15,))
