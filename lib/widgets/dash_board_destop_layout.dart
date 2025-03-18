@@ -16,21 +16,35 @@ class DashBoardDestopLayout extends StatelessWidget {
           child: CustomDrawer()),
           SizedBox(width: 25,),
           Expanded(
-            flex: 2,
-            child: AllExpensessAndQuickInvoiceSection(),),
-
-            const SizedBox(width:25),
-            Expanded(
-              //flex: 1,
-              child: Column(
-                children: [
-                 MyCardAndTransactionHistorySections(),
-                 const SizedBox(height: 10),
-                 Expanded(child: IncomeSection()),
-                 
-                 
-                ],
-              )),
+            flex: 3,
+            child: CustomScrollView(
+              slivers: [
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: Row(
+              children: [
+                Expanded(
+              flex: 2,
+              child: AllExpensessAndQuickInvoiceSection(),),
+            
+              const SizedBox(width:25),
+              Expanded(
+                //flex: 1,
+                child: Column(
+                  children: [
+                   MyCardAndTransactionHistorySections(),
+                   const SizedBox(height: 10),
+                   Expanded(child: IncomeSection()),
+                   
+                   
+                  ],
+                )),
+              ],
+            ),
+                ),
+              ],
+            ),
+          ),
 
 
 
