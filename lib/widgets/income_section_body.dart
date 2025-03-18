@@ -18,7 +18,10 @@ class IncomeSectionBody extends StatelessWidget {
     // to decide the width of conditional widget >> 
    // log(MediaQuery.sizeOf(context).width.toString());
 
-    return width >= SizeConfig.desktop && width < 1365 ? Expanded(child: const DetailedIncomeChart()) :
+    return width >= SizeConfig.desktop && width < 1420 ? Expanded(child: Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: const DetailedIncomeChart(),
+    )) :
     const Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [

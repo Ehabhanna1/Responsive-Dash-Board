@@ -9,7 +9,7 @@ static const  itemDetails = [
   ItemDetailsModel(title: 'Total Inc', value: '40 %', color: Color(0xff208BC7),),
   ItemDetailsModel(title: 'Total Exp', value: '25 %', color:Color(0xff4EB7F2),),
 
-  ItemDetailsModel(title: 'Total Pro', value: '20 %', color: Color(0xff064060),),
+  ItemDetailsModel(title: 'Total Prof', value: '20 %', color: Color(0xff064060),),
   ItemDetailsModel(color: Color(0xffE2DECD), title: "Others", value: "22 %",),
 
   
