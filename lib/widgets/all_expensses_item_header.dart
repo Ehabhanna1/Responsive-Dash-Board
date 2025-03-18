@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:responsive_dash_board/models/all_expensses_item_model.dart';
 
 class AllExpenssesItemHeader extends StatelessWidget {
   const AllExpenssesItemHeader({super.key, required this.image, this.imageBackground,  this.imageColor});
@@ -13,17 +12,25 @@ class AllExpenssesItemHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          width: 60,
-          height: 60,
-          padding: EdgeInsets.all(14),
-          decoration: ShapeDecoration(
-            color:imageBackground ?? Color(0xfffafafafa),
-            shape:OvalBorder(),
-          ),
-          child: SvgPicture.asset(image,
-          colorFilter: ColorFilter.mode(imageColor ?? Color(0xff4EB7F2), BlendMode.srcIn), 
-          
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+              
+                decoration: ShapeDecoration(
+                  color:imageBackground ?? Color(0xfffAFAFA),
+                  shape:OvalBorder(),
+                ),
+                child: Center(
+                  child: SvgPicture.asset(image,
+                  colorFilter: ColorFilter.mode(imageColor ?? Color(0xff4EB7F2), BlendMode.srcIn), 
+                  
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
         Spacer(),
