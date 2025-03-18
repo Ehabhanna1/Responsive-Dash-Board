@@ -20,11 +20,11 @@ class RangeOptions extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Text("Monthly", style: AppStyles.styleMedium16(context).copyWith(fontSize: 13),),
+            Text("Monthly", style: AppStyles.styleMedium16(context)),
             SizedBox(width: 8,),
             Transform.rotate(
               angle: -3.14 / 2,
-              child: Icon(Icons.arrow_back_ios_new_outlined, color: Color(0xff064061),size: 17,))
+              child: Icon(Icons.arrow_back_ios_new_outlined, color: Color(0xff064061),))
           ],
         ),
     );

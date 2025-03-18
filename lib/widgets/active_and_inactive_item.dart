@@ -15,7 +15,7 @@ class InActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(drawerItemModel.title,
-      style: AppStyles.styleRegular16(context).copyWith(fontSize: 15),),
+      style: AppStyles.styleRegular16(context)),
     
       leading: SvgPicture.asset(drawerItemModel.image),
 
@@ -34,7 +34,7 @@ class ActiveDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(drawerItemModel.title,
-      style: AppStyles.styleBold16(context).copyWith(fontSize: 15),),
+      style: AppStyles.styleBold16(context)),
     
       leading: SvgPicture.asset(drawerItemModel.image),
        trailing: Container(
