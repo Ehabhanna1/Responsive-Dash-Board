@@ -30,10 +30,10 @@ class _MyCardSectionState extends State<MyCardSection> {
       children: [
         SizedBox(
           width: 420,
-          child: Text("My Card", style: AppStyles.styleSemiBold20.copyWith(fontSize: 17),)),
-        const SizedBox(height: 9,),
+          child: Text("My Card", style: AppStyles.styleSemiBold20.copyWith(fontSize: 18),),),
+        const SizedBox(height: 12,),
         MyCardPageView(pageController: pageController,),
-        const SizedBox(height: 8,),
+        const SizedBox(height: 10,),
         DotsIndicators(currentPageIndex: currentPage,),
 
       ],
