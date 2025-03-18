@@ -38,8 +38,7 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
       int index = e.key;
       var item = e.value;
 
-      if(index ==1){
-        return Expanded(
+     return Expanded(
           child: GestureDetector(
             onTap: () {
           
@@ -47,25 +46,13 @@ class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
               
             },
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding:  EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0 ),
               child: AllExpensessItem(itemModel: item,
               isSelected: selectedIndex == index,
               ),
             ),
           ),
         );
-      }else{
-        return Expanded(
-          child: GestureDetector(
-            onTap: () {
-          
-              updatIndex(index);
-              
-            },
-            child: AllExpensessItem(itemModel: item,isSelected: selectedIndex == index,),
-          ),
-        );
-      }
      }).toList(),
     );
   
