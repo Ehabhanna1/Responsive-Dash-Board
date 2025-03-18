@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SizeConfig {
   static const double desktop = 1100;
-  static const double tablet = 800;
+  static const double tablet = 700;
 
   static late double height, width;
 
